@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TP5 Simon Game Integration web MMI 2</title>
+		<link rel="icon" type="image/png" href="img/icon.png"/>
+		<meta charset="utf-8"/>
+		<meta content="author" name="Ange Kevin Zokpe - Valentin Gougeon"/>
+		<link rel="stylesheet" href="css/styles.css"/>
+		<script src="js/lib/jquery.js"></script>
+	</head>
+	<body>
+	<div id="container">
+		<nav class="clearfix">
+			<ul class="clearfix">
+				<li><a href="simon.html">Jeu Simon</a>
+				</li>
+				<li><a href="index.html">Règles du jeu</a>
+				</li>
+				<li><a href="outils.html">Outils </a>
+				</li>
+			</ul>
+			<a href="#" id="pull">Menu</a>
+		</nav>
+		<div id="game-board">
+			<div id="gameEasy">
+				<div class="tile" id="red" data-tile="1"><h2></h2></div>
+				<div class="tile" id="blue" data-tile="2"><h2></h2></div>
+				<div class="tile" id="yellow" data-tile="3"><h2></h2></div>
+			</div>
+			<div id="gameHard">
+				<div class="tile" id="red" data-tile="1"><h2></h2></div>
+				<div class="tile" id="blue" data-tile="2"><h2></h2></div>
+				<div class="tile" id="yellow" data-tile="3"><h2></h2></div>
+				<div class="tile" id="green" data-tile="4"><h2></h2></div>
+				<div class="tile" id="purple" data-tile="5"><h2></h2></div>
+				<div class="tile" id="orange" data-tile="6"><h2></h2></div>
+				<div class="tile" id="pink" data-tile="7"><h2></h2></div>
+				<div class="tile" id="brown" data-tile="8"><h2></h2></div>
+			</div>
+		</div>
+		<div id="end">
+			<h2></h2>
+			<button id="restart"> Rejouer </button>
+			<button id="restop"> Arrêter </button>
+		</div>
+		<div id="options">
+			<button id="start"> Jouer </button>
+			<button id="stop"> Arrêter </button>
+			<h3 id="nbtour" data-action="nbround"></h3>
+			<h2>Options de jeu</h2>
+			<div id="vitesse">	
+				<h3>Vitesse :</h3>
+					<h4> Lent</h4>
+					<div class="roundedTwo">
+						<input type="radio" id="low" name="speedMode" value="low"/>
+						<label for="low"></label>
+					</div>
+					<h4>Normal</h4>
+					<div class="roundedTwo">
+						<input type="radio" id="normal" name="speedMode" value="normal" checked/>
+						<label for="normal"></label>
+					</div>
+					<h4>Rapide</h4>
+					<div class="roundedTwo">
+						<input type="radio" id="fast" name="speedMode" value="fast"/>
+						<label for="fast"></label>
+					</div>
+			</div>
+			<div id="difficulte">
+				<h3>Difficulté :</h3>
+					<h4>Facile</h4>
+					<div class="roundedTwo">
+						<input type="radio" id="easy" name="easy" value="easy" checked="checked" />
+						<label for="easy"></label>
+					</div>
+					<h4>Difficile</h4>
+					<div class="roundedTwo">
+						<input type="radio" id="hard" name="hard" value="hard" />
+						<label for="hard"></label>
+					</div>
+			</div> 
+			<p>Copyright © 2015 - Valentin Gougeon - Ange Kévin Zokpe - Tous droits réservés</p>
+		</div>
+		<footer>
+			<h2 id="note"></h2>
+		</footer>
+		<div data-action="sound"></div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/lib/audiosynth.js"></script>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TP5 Simon Game Integration web MMI 2</title>
+		<link rel="icon" type="image/png" href="img/icon.png"/>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<meta content="author" name="Ange Kevin Zokpe - Valentin Gougeon"/>
+		<link rel="stylesheet" href="css/styles.css"/>
+	</head>
+	<style type="text/css">
+		body{
+			background-color: gray;
+		}
+		footer{
+			background-color: black;
+			color: white;
+			font-size: x-small;
+			position: fixed;
+			padding: 10px;
+		}
+		h2{
+			color: black;
+		}
+		#divT{
+			padding: 30px;
+			text-indent: 30px;
+		}
+		#texte{
+			padding-bottom: 30px;
+			color: white;
+		}
+	</style>
+	<body>
+	<div id="container">
+		<nav class="clearfix">
+			<ul class="clearfix">
+				<li><a href="simon.html">Jeu Simon</a>
+				</li>
+				<li><a href="index.html">Règles du jeu</a>
+				</li>
+				<li><a href="outils.html">Outils </a>
+				</li>
+			</ul>
+			<a href="#" id="pull">Menu</a>
+		</nav>
+	</div>
+		<h2> Présentation </h2>
+		<div id="texte">
+			<div id="divT" align="justify"> 		
+				Le jeu du Simon trouve son origine dans le jeu pour enfant Jacques a dit, d'où il tire également son nom, puisque dans les pays anglophones ce n'est pas Jacques mais Simon (Simon Says…) qui donne les ordres.
+				De base c'est un jeu électronique, qui éclaire une des quatre couleurs et produit un son toujours associé à cette couleur. Le joueur doit alors appuyer sur la touche de la couleur qui vient de s'allumer dans un délai assez court.
+				Le jeu répète la même couleur et le même son, puis ajoute au hasard une nouvelle couleur. Le joueur doit reproduire cette nouvelle séquence. Chaque fois que le joueur reproduit correctement la séquence, le jeu ajoute une nouvelle couleur.
+			</div>
+			<h2> Règles de jeu </h2>
+			<div id="divT" class="divT_last" align="justify"> 
+				Dans notre version le but du jeu est de reproduire la plus longue des suites. Une séquence (couleur, note) est reproduite aléatoirement et contruite au fur à mesure que l'utilisateur la reproduit. Il y a plusieurs niveaux jouables, correspondant à une plus ou moins grande rapidité d'exécution. Notre version a deux options qui permettent de paramétrer la vitesse et le nombre de notes (entre 3 et 8, en partant du DO) 
+			</div>
+		</div>
+		<footer>
+			<p>Copyright © 2015 - Valentin Gougeon - Ange Kévin Zokpe - Tous droits réservés</p>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
